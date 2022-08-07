@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>form</title>
+</head>
+<div class="container">
+<body>
+   <h1 class="header" id="title"><strong>Registro de miembros</strong></h1>
+  
+      <form id="registro">
+      <div class="form-group">
+        <label id="nombre" for="nombre"><strong> Nombre</strong></label>
+      <input
+      type="text"
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Nombre"
+      required
+      />
+        </div>
+      <div class="form-group">
+        <label id="contacto" for="contacto"><strong>Contacto</strong></label>
+      <input
+      type="text"
+      name="contacto"
+      id="contacto"
+      class="form-control"
+      placeholder="Contacto"
+      required
+      />
+        </div>
+      <div class="form-group">
+        <label id="edad" for="edad"><strong>Edad</strong></label>
+      <input
+      type="number"
+      min="1"
+      max="150"
+      name="edad"
+      id="edad"
+      class="form-control"
+      placeholder="Edad"
+      />
+      </div>
+      <div class="form-group">
+        <label id="genero" for="genero" ><strong>Genero</strong> </label>
+      <select id="genero" name="genero" class="form-group" required>
+        <option><strong>Selecciona el genero</strong> </option>
+        <option value="mujer">Mujer</option>
+        <option value="hombre">Hombre</option>
+        <option value="no-gracias">No gracias</option>
+        </select>
+        </div>
+      <div class="form-group">
+        <label id="membresia" for="membresia" ><strong>Tipo de membresía</strong></label>
+      <p>
+      <input
+      type="checkbox"
+      name="membresia"
+      id="membresia"
+      value="mensual"
+      class="input-checkbox"
+             />Mensual</p>
+      <label>
+      <input
+      type="checkbox"
+      name="membresia"
+      id="membresia"
+      value="anual"
+      class="input-checkbox"
+             />Anual</label>
+        </div>
+        <div>
+          <label>
+            <input 
+            type="date"
+            name="fecha-ingreso"
+            id="fecha-ingreso"
+            value="fecha de ingreso"
+            class="form-group"
+          </label>
+        </div>
+        <label>
+      <div class="form-group">
+        <p><strong>Comentarios</strong></p>
+      <textarea
+      id="comentarios"
+      class="input-textarea"
+      name="comentarios"
+                placeholder="Agrega comentarios"></textarea>
+              </label>
+      
+      <div class="form-group">
+      
+        <button type="submit" id="submit" class="submit" value="Terminar registro">Terminar registro</button>
+         </div>
+      </form>
+    </body>
+  </div>
+    </html>
+        
+           
